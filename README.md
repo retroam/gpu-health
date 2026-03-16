@@ -4,7 +4,7 @@ emoji: 🔥
 colorFrom: red
 colorTo: blue
 sdk: gradio
-sdk_version: "4.44.0"
+sdk_version: "5.29.0"
 app_file: app.py
 pinned: false
 ---
@@ -155,6 +155,41 @@ python eval.py \
   --predictions predictions_xid.jsonl \
   --report eval_xid_report.json
 ```
+
+## Latest Results
+
+Artifacts generated on `2026-03-15` with the saved runtime in `artifacts/gpu-health-v1.json`.
+
+- Dataset size: `642` synthetic examples across `107` XIDs (`6` examples per XID)
+- Split sizes: `110` train, `486` held-out-XID eval, `46` held-out-format eval
+- Training loss: epoch 1 `2.9895`, epoch 2 `1.1915`, epoch 3 `0.7471`
+- Saved checkpoint: `tinker://dd1abd5e-14af-5db3-8e25-fb99ba240855:train:0/sampler_weights/gpu-health-v1`
+
+Tinker evals below were run with `--max-tokens 64` against the saved runtime.
+
+### Held-out XID Eval
+
+- Report: `artifacts/eval_xid_report.json`
+- Predictions: `artifacts/predictions_xid.jsonl`
+- Rows: `486`
+- XID exact accuracy: `68.72%` (`334/486`)
+- Immediate action accuracy: `45.88%` (`223/486`)
+- Investigatory action accuracy: `7.20%` (`35/486`)
+- Both actions correct: `4.12%` (`20/486`)
+- Summary BLEU: `0.2465`
+
+### Held-out Format Eval
+
+- Report: `artifacts/eval_format_report.json`
+- Predictions: `artifacts/predictions_format.jsonl`
+- Rows: `46`
+- XID exact accuracy: `82.61%` (`38/46`)
+- Immediate action accuracy: `41.30%` (`19/46`)
+- Investigatory action accuracy: `13.04%` (`6/46`)
+- Both actions correct: `4.35%` (`2/46`)
+- Summary BLEU: `0.2457`
+
+These results show that the model is learning to recover the XID code from unseen logs, but it is still weak on richer operator guidance, especially investigatory actions. The current model often produces terse outputs, so improving the supervised targets and prompting is the next highest-leverage step.
 
 ## Notes
 

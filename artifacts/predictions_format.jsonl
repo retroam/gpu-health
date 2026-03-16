@@ -1,0 +1,46 @@
+{"output": "Xid 41 indicates a ROBUST_CHANNEL_CE2_ERROR. Immediate action is to ignore, but it's recommended to contact support for further investigation."}
+{"output": "Xid 43 indicates a ROBUST_CHANNEL_RESETCHANNEL_VERIF_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 43 indicates a ROBUST_CHANNEL_RESETCHANNEL_VERIF_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 43 indicates a ROBUST_CHANNEL_RESETCHANNEL_VERIF_ERROR. Immediate action is to RESTART_APP, but it's recommended to INVESTIGATE_APP."}
+{"output": "Xid 44 indicates a graphics engine fault during a context switch. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 44 indicates a graphics engine fault during context switch. Immediate action required: RESTART_APP."}
+{"output": "Xid 44 indicates a graphics engine fault during context switch. Immediate action is to ignore, but it's recommended to check for driver updates."}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "Xid 45 indicates a driver error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "Xid 46 indicates a ROBUST_CHANNEL_GPU_TIMEOUT_ERROR. Immediate action is to RESET_GPU, but it's recommended to INVESTIGATE_APP."}
+{"output": "Xid 48 indicates an uncorrectable ECC error on the GPU. Immediate action is to RESTART_APP, but it's recommended to INVESTIGATE_APP."}
+{"output": "Xid 48 indicates a driver error. Immediate action is to RESET_GPU, but it's recommended to INVESTIGATE_APP."}
+{"output": "Xid 48 indicates an ECC memory error. Immediate action is to RESET_APP, but it's recommended to INVESTIGATE_APP."}
+{"output": "Xid 54 indicates a silent running power reduced clocking event. Immediate action is to ignore, but it's recommended to check auxiliary power connections."}
+{"output": "Xid 54 indicates a silent running power reduced clocking event. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 54 indicates a silent running power reduced clocking event. Immediate action is to ignore, but it's recommended to check your application or driver."}
+{"output": "Xid 60 indicates a ROBUST_CHANNEL_SEC2_ERROR. Immediate action is to ignore, but it's recommended to investigate software."}
+{"output": "RESTART_APP; INVESTIGATE_APP"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "Xid 62 indicates a driver firmware error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 62 indicates a PMU_HALT_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 62 indicates a PMU_HALT_ERROR. Immediate action is to ignore, but it's recommended to check the application and consider restarting."}
+{"output": "Xid 63 indicates a memory remapping event. No action is required."}
+{"output": "Xid 63 indicates a memory remapping event. Immediate action is to ignore, but it's recommended to check the row remapping documentation for further assistance."}
+{"output": "Xid 63 indicates a memory remapping event. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 64 indicates a memory remapping failure. Immediate action is to RESET_GPU, but it's recommended to INVESTIGATE_APP/CUDA."}
+{"output": "Xid 64 indicates a memory remapping failure. Immediate action is to reset the GPU, but it's recommended to contact support for further assistance."}
+{"output": "Xid 64 indicates a memory remapping failure. Immediate action is to ignore, but it's recommended to reset the GPU."}
+{"output": "Xid 66 indicates a driver access violation. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 66 indicates a driver-caused illegal access. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 66 indicates a driver access violation. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 67 indicates an illegal access by the driver. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 67 indicates an illegal access by the driver. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 67 indicates an illegal access by the driver. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "XID 68 indicates a ROBUST_CHANNEL_NVDEC0_ERROR on the H100 GPU. Immediate action is to RESTART_APP, but it's recommended to INVESTIGATE_APP for deeper insights."}
+{"output": "XID 68 indicates a ROBUST_CHANNEL_NVDEC0_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "Xid 69 indicates a Graphics Engine class error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 69 indicates a graphics engine class error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 69 indicates a graphics engine class error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "Xid 70 indicates a ROBUST_CHANNEL_CE3_ERROR. Immediate action is to ignore, but it's recommended to contact support for further investigation."}
+{"output": "Xid 70 indicates a ROBUST_CHANNEL_CE3_ERROR. Immediate action is to ignore, but it's recommended to contact support for further assistance."}

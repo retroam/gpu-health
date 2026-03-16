@@ -56,6 +56,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--tinker-base-model", help="Fallback base model for Tinker sampling")
     parser.add_argument("--max-tokens", type=int, default=DEFAULT_MAX_TOKENS)
     parser.add_argument("--temperature", type=float, default=DEFAULT_TEMPERATURE)
+    parser.add_argument("--progress-every", type=int, default=25, help="Print progress every N generated rows")
     parser.add_argument("--report", default="eval_report.json")
     return parser.parse_args()
 
@@ -178,12 +179,26 @@ def build_meta_entry(meta: dict) -> XidEntry:
 def generate_predictions(dataset: list[dict], args: argparse.Namespace) -> list[dict]:
     if args.predictor == "heuristic":
         predictions: list[dict] = []
-        for row in dataset:
-            meta = row.get("meta", {})
-            log_text = extract_log_text(row)
-            entry = build_meta_entry(meta if isinstance(meta, dict) else {})
-            summary = build_heuristic_summary(log_text=log_text, entry=entry, xid_code=entry.xid_code)
-            predictions.append({"output": summary})
+        output_handle = None
+        if args.output_predictions:
+            output_path = Path(args.output_predictions)
+            output_path.parent.mkdir(parents=True, exist_ok=True)
+            output_handle = output_path.open("w", encoding="utf-8")
+        try:
+            for idx, row in enumerate(dataset, start=1):
+                meta = row.get("meta", {})
+                log_text = extract_log_text(row)
+                entry = build_meta_entry(meta if isinstance(meta, dict) else {})
+                prediction = {"output": build_heuristic_summary(log_text=log_text, entry=entry, xid_code=entry.xid_code)}
+                predictions.append(prediction)
+                if output_handle is not None:
+                    output_handle.write(json.dumps(prediction, ensure_ascii=True) + "\n")
+                    output_handle.flush()
+                if args.progress_every > 0 and idx % args.progress_every == 0:
+                    print(f"generated_predictions={idx}/{len(dataset)}")
+        finally:
+            if output_handle is not None:
+                output_handle.close()
         return predictions
 
     config = load_runtime_config(
@@ -195,8 +210,23 @@ def generate_predictions(dataset: list[dict], args: argparse.Namespace) -> list[
     )
     sampler = TinkerSampler(config)
     predictions = []
-    for row in dataset:
-        predictions.append({"output": sampler.sample_messages(build_generation_messages(row))})
+    output_handle = None
+    if args.output_predictions:
+        output_path = Path(args.output_predictions)
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        output_handle = output_path.open("w", encoding="utf-8")
+    try:
+        for idx, row in enumerate(dataset, start=1):
+            prediction = {"output": sampler.sample_messages(build_generation_messages(row))}
+            predictions.append(prediction)
+            if output_handle is not None:
+                output_handle.write(json.dumps(prediction, ensure_ascii=True) + "\n")
+                output_handle.flush()
+            if args.progress_every > 0 and idx % args.progress_every == 0:
+                print(f"generated_predictions={idx}/{len(dataset)}")
+    finally:
+        if output_handle is not None:
+            output_handle.close()
     return predictions
 
 
@@ -210,9 +240,6 @@ def write_jsonl(path: Path, rows: list[dict]) -> None:
 def run(args: argparse.Namespace) -> None:
     dataset = load_jsonl(Path(args.dataset))
     predictions = load_jsonl(Path(args.predictions)) if args.predictions else generate_predictions(dataset, args)
-
-    if not args.predictions and args.output_predictions:
-        write_jsonl(Path(args.output_predictions), predictions)
 
     if len(dataset) != len(predictions):
         raise RuntimeError("Dataset and predictions must have equal number of rows")

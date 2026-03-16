@@ -1,0 +1,13 @@
+{
+  "rows": 46,
+  "xid_exact_matches": 38,
+  "xid_exact_accuracy": 0.8260869565217391,
+  "immediate_action_matches": 19,
+  "immediate_action_accuracy": 0.41304347826086957,
+  "investigatory_action_matches": 6,
+  "investigatory_action_accuracy": 0.13043478260869565,
+  "all_action_matches": 2,
+  "all_action_accuracy": 0.043478260869565216,
+  "summary_bleu": 0.24565954912143279,
+  "summary_bleu_rows": 46
+}

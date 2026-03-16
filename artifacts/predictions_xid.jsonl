@@ -1,0 +1,486 @@
+{"output": "RESTART_GPU; CHECK_APP/CUDA"}
+{"output": "RESTART_GPU"}
+{"output": "RESTART_GPU"}
+{"output": "RESTART_GPU"}
+{"output": "RESTART_GPU"}
+{"output": "RESTART_GPU; CHECK_APP/CUDA"}
+{"output": "RESTART_APP"}
+{"output": "RESTART_APP"}
+{"output": "RESTART_APP"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP"}
+{"output": "Xid 72 indicates a ROBUST_CHANNEL_CE5_ERROR. Immediate action is to RESTART_APP, but it's recommended to INVESTIGATE_APP."}
+{"output": "Xid 74 indicates a NVLINK error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "Xid 74 indicates a link failure on the NVLink. Immediate action is to ignore, but it's recommended to check the physical connections."}
+{"output": "Xid 74 indicates a communication error on the NVLink. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 74 indicates a driver firmware error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 74 indicates a NVLINK_ERROR. Immediate action is to RESTART_APP, but it's recommended to INVESTIGATE_APP."}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "XID 77 indicates a GPU driver error. Immediate action is to ignore, but it's recommended to restart the application."}
+{"output": "XID 77 indicates a ROBUST_CHANNEL_CE8_ERROR on the A100 GPU. Immediate action is to RESTART_APP, but it's recommended to INVESTIGATE_APP for deeper insights."}
+{"output": "XID 77 indicates a CE8 error on the GPU. Immediate action is to ignore, but it's recommended to check the application logs for further investigation."}
+{"output": "XID 77 indicates an unknown error on the GPU. Immediate action is to ignore, but it's recommended to restart the application."}
+{"output": "RESTART_APP"}
+{"output": "RESTART_APP"}
+{"output": "Xid 78 indicates a VGPU_START_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 78 indicates a driver error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 78 indicates a VGPU start error. Immediate action is to ignore, but it's recommended to check your configuration."}
+{"output": "Xid 78 indicates a driver error. Immediate action is to ignore, but it's recommended to contact support for further investigation."}
+{"output": "Xid 78 indicates a driver firmware error. Immediate action is to ignore, but it's recommended to contact support for further assistance."}
+{"output": "RESTART_GPU"}
+{"output": "XID 79 indicates a GPU has fallen off the bus. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "XID 79 indicates a GPU driver or software issue. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "XID 79 indicates a GPU has fallen off the bus. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "XID 79 indicates a GPU bus error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "XID 79 indicates a GPU has fallen off the bus. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "XID 79 indicates a GPU driver error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 80 indicates a PBDMA_PUSHBUFFER_CRC_MISMATCH. Immediate action is to ignore, but it's recommended to CHECK_APP/CUDA."}
+{"output": "Xid 80 indicates a corrupted push buffer. Immediate action is to ignore, but it's recommended to check your application and drivers."}
+{"output": "Xid 80 indicates a corrupted push buffer. Immediate action is to ignore, but it's recommended to restart the application."}
+{"output": "Xid 80 indicates a PBDMA_PUSHBUFFER_CRC_MISMATCH. Immediate action is to RESTART_APP, but it's recommended to INVESTIGATE_APP/CUDA."}
+{"output": "Xid 80 indicates a PBDMA_PUSHBUFFER_CRC_MISMATCH. Immediate action is to RESTART_APP, but it's recommended to INVESTIGATE_APP."}
+{"output": "Xid 80 indicates a PBDMA_PUSHBUFFER_CRC_MISMATCH. Immediate action is to ignore, but it's recommended to restart the application."}
+{"output": "Xid 82 indicates a ROBUST_CHANNEL_NVJPG0_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "RESTART_GPU; CHECK_APP/CUDA"}
+{"output": "Xid 82 indicates a ROBUST_CHANNEL_NVJPG0_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "Xid 82 indicates a ROBUST_CHANNEL_NVJPG0_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "Xid 83 indicates a ROBUST_CHANNEL_NVDEC1_ERROR. Immediate action is to RESTART_APP, but it's recommended to INVESTIGATE_APP for further details."}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP"}
+{"output": "Xid 83 indicates a ROBUST_CHANNEL_NVDEC1_ERROR. Immediate action is to ignore, but it's recommended to run diagnostic tools for further investigation."}
+{"output": "RESTART_APP"}
+{"output": "XID 84 indicates a ROBUST_CHANNEL_NVDEC2_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "XID 84 indicates a ROBUST_CHANNEL_NVDEC2_ERROR. Immediate action is to RESTART_APP, but it's recommended to INVESTIGATE_APP."}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "XID 84 indicates a ROBUST_CHANNEL_NVDEC2_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "XID 84 indicates a ROBUST_CHANNEL_NVDEC2_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "XID 84 indicates a ROBUST_CHANNEL_NVDEC2_ERROR. Immediate action is to RESTART_APP, but it's recommended to INVESTIGATE_APP."}
+{"output": "RESTART_GPU"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "Xid 13 indicates a driver error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "Xid 13 indicates a driver error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "RESTART_GPU; CHECK_APP/CUDA"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "XID 88 indicates a ROBUST_CHANNEL_NVDEC3_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "XID 88 indicates a ROBUST_CHANNEL_NVDEC3_ERROR. Immediate action is to RESTART_APP, but it's recommended to INVESTIGATE_APP."}
+{"output": "XID 88 indicates a ROBUST_CHANNEL_NVDEC3_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "XID 88 indicates a ROBUST_CHANNEL_NVDEC3_ERROR. Immediate action is to ignore, but it's recommended to contact support for further investigation."}
+{"output": "XID 88 indicates a ROBUST_CHANNEL_NVDEC3_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "XID 88 indicates a ROBUST_CHANNEL_NVDEC3_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP"}
+{"output": "RESTART_APP"}
+{"output": "Xid 89 indicates a ROBUST_CHANNEL_NVDEC4_ERROR. Immediate action is to ignore, but it's recommended to contact support for further assistance."}
+{"output": "RESTART_APP"}
+{"output": "RESTART_APP"}
+{"output": "Xid 92 indicates EXCESSIVE_SBE_INTERRUPTS. Immediate action is to ignore, but it's recommended to CHECK_MEMORY_INTEGRITY."}
+{"output": "Xid 92 indicates EXCESSIVE_SBE_INTERRUPTS. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 92 indicates EXCESSIVE_SBE_INTERRUPTS. Immediate action is to ignore, but it's recommended to CHECK_SYSTEM_MEMORY."}
+{"output": "Xid 92 indicates EXCESSIVE_SBE_INTERRUPTS. Immediate action is to IGNORE, but it's recommended to INVESTIGATE_SW."}
+{"output": "Xid 92 indicates EXCESSIVE_SBE_INTERRUPTS. Immediate action is to IGNORE, but it's recommended to INVESTIGATE_SW."}
+{"output": "Xid 92 indicates EXCESSIVE_SBE_INTERRUPTS. Immediate action is to ignore, but it's recommended to contact support for further investigation."}
+{"output": "Xid 93 indicates an INFOROM wear limit exceeded. Immediate action is to ignore, but it's recommended to contact support for further assistance."}
+{"output": "Xid 93 indicates that the InfoROM wear limit has been exceeded. Immediate action is to ignore, but it's recommended to contact support for further investigation."}
+{"output": "Xid 93 indicates that the GPU has reached its InfoROM erase limit. Immediate action is to ignore, but it's recommended to contact support for further assistance."}
+{"output": "Xid 93 indicates an InfoROM erase limit has been exceeded. Immediate action is to ignore, but it's recommended to contact support for further assistance."}
+{"output": "Xid 93 indicates an InfoROM wear limit exceeded. Immediate action is to ignore, but it's recommended to contact support for further assistance."}
+{"output": "Xid 93 indicates an INFOROM_ERASE_LIMIT_EXCEEDED. Immediate action is to ignore, but it's recommended to contact support for further investigation."}
+{"output": "RESTART_APP"}
+{"output": "RESTART_APP"}
+{"output": "RESTART_APP"}
+{"output": "RESTART_APP"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP"}
+{"output": "Xid 95 indicates an uncontained memory error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 95 indicates an uncontained memory error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 95 indicates an uncontained memory error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 95 indicates an uncontained memory error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 95 indicates an uncontained memory error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 95 indicates an uncontained memory error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "RESTART_APP; CHECK_LOGS"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP"}
+{"output": "RESTART_APP"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "XID 98 indicates a ROBUST_CHANNEL_NVDEC7_ERROR. Immediate action is to ignore, but it's recommended to contact support for further assistance."}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP"}
+{"output": "Xid 99 indicates a ROBUST_CHANNEL_NVJPG1_ERROR. Immediate action is to ignore, but it's recommended to contact support for further investigation."}
+{"output": "RESTART_APP"}
+{"output": "RESTART_APP"}
+{"output": "RESTART_APP"}
+{"output": "RESTART_APP"}
+{"output": "RESTART_APP"}
+{"output": "RESTART_APP"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP"}
+{"output": "RESTART_APP"}
+{"output": "RESTART_APP"}
+{"output": "RESTART_APP"}
+{"output": "RESTART_APP"}
+{"output": "Xid 102 indicates a ROBUST_CHANNEL_NVJPG4_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "Xid 102 indicates a ROBUST_CHANNEL_NVJPG4_ERROR. Immediate action is to RESTART_APP, but it's recommended to INVESTIGATE_APP."}
+{"output": "Xid 102 indicates a ROBUST_CHANNEL_NVJPG4_ERROR. Immediate action is to RESTART_APP, but it's recommended to INVESTIGATE_APP for deeper insights."}
+{"output": "RESTART_APP"}
+{"output": "Xid 102 indicates a ROBUST_CHANNEL_NVJPG4_ERROR. Immediate action is to RESTART_APP, but further investigation is required."}
+{"output": "Xid 103 indicates a ROBUST_CHANNEL_NVJPG5_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "RESTART_GPU"}
+{"output": "Xid 103 indicates a ROBUST_CHANNEL_NVJPG5_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 103 indicates a ROBUST_CHANNEL_NVJPG5_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 103 indicates a ROBUST_CHANNEL_NVJPG5_ERROR. Immediate action is to RESTART_APP, but it's recommended to INVESTIGATE_APP."}
+{"output": "Xid 103 indicates a ROBUST_CHANNEL_NVJPG5_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP"}
+{"output": "RESTART_APP"}
+{"output": "RESTART_APP"}
+{"output": "RESTART_APP"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "Xid 105 indicates a ROBUST_CHANNEL_NVJPG7_ERROR. Immediate action is to ignore, but it's recommended to contact support for further assistance."}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "Xid 106 indicates a software interrupt. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 106 indicates a software interrupt. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 106 indicates a software interrupt. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 106 indicates a software interrupt. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 106 indicates a software interrupt. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 106 indicates a software interrupt. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 107 indicates a silent error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 107 indicates a silent error on the GPU. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 107 indicates a silent SMBus message. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 107 indicates a silent error on the GPU. No action is required."}
+{"output": "Xid 107 indicates a silent error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 107 indicates a silent SMBus message. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 109 indicates a ROBUST_CHANNEL_CTXSW_TIMEOUT_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 109 indicates a ROBUST_CHANNEL_CTXSW_TIMEOUT_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 109 indicates a ROBUST_CHANNEL_CTXSW_TIMEOUT_ERROR. The GPU has been reset. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 109 indicates a context switch timeout on the GPU. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 109 indicates a software induced reset. Immediate action is to ignore, but it's recommended to investigate the application."}
+{"output": "Xid 109 indicates a ROBUST_CHANNEL_CTXSW_TIMEOUT_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 110 indicates a software fault. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 110 indicates a security fault on the GPU. Immediate action is to reset the GPU, but it's recommended to investigate further."}
+{"output": "Xid 110 indicates a software fault. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 110 indicates a software fault on the GPU. Immediate action is to RESET_GPU, but it's recommended to INVESTIGATE_APP."}
+{"output": "Xid 110 indicates a software fault. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 110 indicates a security fault error. Immediate action is to reset the GPU, but it's recommended to contact support for further assistance."}
+{"output": "XID 119 indicates a GSP_RPC_TIMEOUT. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "XID 119 indicates a GSP_RPC_TIMEOUT. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "XID 119 indicates a GSP_RPC_TIMEOUT. Immediate action is to RESET_GPU, but it's recommended to INVESTIGATE_APP/CUDA."}
+{"output": "XID 119 indicates a GSP RPC timeout. Immediate action is to RESET_GPU, but it's recommended to INVESTIGATE_APP."}
+{"output": "XID 119 indicates a GSP_RPC_TIMEOUT. Immediate action is to ignore, but it's recommended to investigate software issues."}
+{"output": "XID 119 indicates a GSP_RPC_TIMEOUT. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 120 indicates a GSP error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 120 indicates a GSP error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 120 indicates a GSP error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 120 indicates a GSP error. Immediate action is to RESET_GPU, but it's recommended to INVESTIGATE_SW."}
+{"output": "Xid 120 indicates a GSP error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 120 indicates a GSP error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 121 indicates a corrected error on the C2C NVLink connection. Immediate action is to reset the GPU, but it's recommended to check the VBIOS version."}
+{"output": "Xid 121 indicates a corrected error on the C2C NVLink. Immediate action is to ignore, but it's recommended to check for VBIOS updates."}
+{"output": "Xid 121 indicates a corrected error on the C2C NVLink. Immediate action is to ignore, but it's recommended to reset the GPU."}
+{"output": "Xid 121 indicates a corrected error on NVLink. Immediate action is to ignore, but it's recommended to contact support for further investigation."}
+{"output": "Xid 121 indicates a corrected error on the NVLink connection. Immediate action is to ignore, but it's recommended to reset the GPU for link retraining."}
+{"output": "Xid 121 indicates a corrected error on the C2C NVLink. Immediate action is to ignore, but it's recommended to reset the GPU if errors persist."}
+{"output": "RESTART_APP"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP"}
+{"output": "RESTART_APP"}
+{"output": "Xid 127 indicates a ROBUST_CHANNEL_CE11_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP"}
+{"output": "Xid 127 indicates a ROBUST_CHANNEL_CE11_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "RESTART_APP"}
+{"output": "Xid 128 indicates a ROBUST_CHANNEL_CE12_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 128 indicates a ROBUST_CHANNEL_CE12_ERROR. Immediate action is to ignore, but it's recommended to contact support for further assistance."}
+{"output": "RESTART_APP"}
+{"output": "Xid 128 indicates a ROBUST_CHANNEL_CE12_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "RESTART_APP"}
+{"output": "Xid 128 indicates a ROBUST_CHANNEL_CE12_ERROR. Immediate action required: RESTART_APP."}
+{"output": "RESTART_APP"}
+{"output": "RESTART_APP"}
+{"output": "RESTART_APP"}
+{"output": "RESTART_APP"}
+{"output": "RESTART_APP"}
+{"output": "RESTART_APP"}
+{"output": "RESTART_GPU"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "Xid 130 indicates a ROBUST_CHANNEL_CE14_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 130 indicates a ROBUST_CHANNEL_CE14_ERROR. Immediate action is to RESTART_APP, but it's recommended to INVESTIGATE_APP."}
+{"output": "RESTART_APP"}
+{"output": "Xid 130 indicates a ROBUST_CHANNEL_CE14_ERROR. Immediate action required: RESTART_APP. Investigatory action: CHECK_APP/CUDA."}
+{"output": "Xid 131 indicates a driver software error. Immediate action is to ignore, but it's recommended to contact support for further assistance."}
+{"output": "Xid 131 indicates a driver firmware error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 131 indicates an unknown error on the GPU. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 131 indicates a driver error. Immediate action is to ignore, but it's recommended to contact support for further assistance."}
+{"output": "Xid 131 indicates an unrecoverable error. Immediate action is to RESTART_APP, but it's recommended to INVESTIGATE_APP for further assistance."}
+{"output": "Xid 131 indicates a driver error. Immediate action is to RESTART_APP, but it's recommended to INVESTIGATE_APP for further assistance."}
+{"output": "RESTART_APP"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "Xid 132 indicates a ROBUST_CHANNEL_CE16_ERROR. Immediate action is to RESTART_APP, but it's recommended to INVESTIGATE_APP."}
+{"output": "RESTART_APP"}
+{"output": "RESTART_APP"}
+{"output": "RESTART_APP"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "Xid 134 indicates a ROBUST_CHANNEL_CE18 error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 134 indicates a ROBUST_CHANNEL_CE18 error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 134 indicates a ROBUST_CHANNEL_CE18 error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 134 indicates a ROBUST_CHANNEL_CE18 error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "RESTART_APP"}
+{"output": "Xid 134 indicates a ROBUST_CHANNEL_CE18 error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 135 indicates a driver software error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 135 indicates a driver software error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 135 indicates an unknown error on the GPU. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 135 indicates a driver firmware error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 135 indicates an unknown error on the GPU. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 135 indicates a driver firmware error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "XID 136 indicates a link training failure. Immediate action is to RESET_GPU, but it's recommended to INVESTIGATE_APP."}
+{"output": "XID 136 indicates a link training failure. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "XID 136 indicates a link training failure. Immediate action is to RESET_GPU, but it's recommended to INVESTIGATE_SW."}
+{"output": "XID 136 indicates a link training failure. Immediate action is to RESET_GPU, but it's recommended to INVESTIGATE_SW."}
+{"output": "XID 136 indicates a link training failure. Immediate action is to RESET_GPU, but it's recommended to INVESTIGATE_APP."}
+{"output": "XID 136 indicates a link training failure. Immediate action is to ignore, but it's recommended to check your application and drivers."}
+{"output": "Xid 137 indicates an illegal memory access by the user application. Immediate action is to ignore, but it's recommended to check the application code."}
+{"output": "Xid 137 indicates a NVLink Privilege Error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 137 indicates an illegal access pattern by the application. Immediate action is to ignore, but it's recommended to check the application."}
+{"output": "Xid 137 indicates an illegal peer-to-peer access. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 137 indicates an NVLink Privilege Error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 137 indicates a driver or application issue. Immediate action is to ignore, but it's recommended to contact support for further investigation."}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "Xid 139 indicates a ROBUST_CHANNEL_OFA1_ERROR. Immediate action is to RESTART_APP, but it's recommended to INVESTIGATE_APP."}
+{"output": "Xid 139 indicates a ROBUST_CHANNEL_OFA1_ERROR. Immediate action is to RESTART_APP, but it's recommended to INVESTIGATE_APP for further assistance."}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "Xid 139 indicates a ROBUST_CHANNEL_OFA1_ERROR. Immediate action is to RESTART_APP, but it's recommended to INVESTIGATE_APP."}
+{"output": "Xid 140 indicates an unrecoverable ECC error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 140 indicates an unrecoverable ECC error. Immediate action is to RESET_GPU, but it's recommended to INVESTIGATE_APP."}
+{"output": "Xid 140 indicates an unrecoverable ECC error. Immediate action is to RESET_GPU, but it's recommended to INVESTIGATE_APP."}
+{"output": "Xid 140 indicates a critical memory access error. Immediate action is to RESTART_APP, but it's recommended to INVESTIGATE_APP."}
+{"output": "Xid 140 indicates an unrecoverable ECC error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 140 indicates an unrecoverable ECC error. Immediate action is to RESET_GPU, but it's advisable to INVESTIGATE_APP."}
+{"output": "Xid 141 indicates a ROBUST_CHANNEL_FAST_PATH_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 141 indicates a ROBUST_CHANNEL_FAST_PATH_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 141 indicates a ROBUST_CHANNEL_FAST_PATH_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 141 indicates a ROBUST_CHANNEL_FAST_PATH_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "Xid 142 indicates a ROBUST_CHANNEL_NVENC3_ERROR. Immediate action is to RESTART_APP, but it's recommended to INVESTIGATE_APP for further assistance."}
+{"output": "Xid 142 indicates a ROBUST_CHANNEL_NVENC3_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 142 indicates a ROBUST_CHANNEL_NVENC3_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 142 indicates a ROBUST_CHANNEL_NVENC3_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 142 indicates a ROBUST_CHANNEL_NVENC3_ERROR. Immediate action is to ignore, but it's recommended to contact support for further investigation."}
+{"output": "Xid 142 indicates a ROBUST_CHANNEL_NVENC3_ERROR. Immediate action required: RESTART_APP. Investigatory action: CHECK_APP/CUDA."}
+{"output": "Xid 143 indicates a GPU initialization error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 143 indicates a GPU initialization error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 143 indicates a GPU_INIT_ERROR. Immediate action is to RESTART_APP, but it's recommended to INVESTIGATE_APP for deeper insights."}
+{"output": "Xid 143 indicates a GPU initialization error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 143 indicates a GPU_INIT_ERROR. Immediate action is to RESTART_APP, but it's recommended to INVESTIGATE_APP for deeper insights."}
+{"output": "Xid 143 indicates a GPU initialization error. Immediate action is to ignore, but it's recommended to investigate hardware connections."}
+{"output": "Xid 144 indicates a SAW error in NVLINK communication. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 144 indicates a SAW error on the NVLINK interface. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 144 indicates a SAW error on the NVLINK connection. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 144 indicates an error in NVLINK communication. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 144 indicates a SAW error on the NVLINK interface. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 144 indicates an NVLINK SAW error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "XID 145 indicates a user application error. Immediate action is to ignore, but it's recommended to check your application or kernel."}
+{"output": "XID 145 indicates a problem with the NVLINK connection. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "XID 145 indicates an NVLINK communication error. Immediate action is to ignore, but it's recommended to check NVLINK connections."}
+{"output": "XID 145 indicates a NVLINK link error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "XID 145 indicates an NVLINK fault. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "XID 145 indicates an NVLINK error. Immediate action is to ignore, but it's recommended to check your NVLINK configuration."}
+{"output": "Xid 146 indicates a driver firmware error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 146 indicates a driver firmware error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 146 indicates a TLW error on the NVLINK. Immediate action is to ignore, but it's recommended to check your NVLINK connections."}
+{"output": "Xid 146 indicates a driver firmware error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 146 indicates a TLW error on the GPU. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 146 indicates a user application fault. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 147 indicates a TREX error on the NVLINK. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 147 indicates a TREX error on the NVLINK. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 147 indicates a driver error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 147 indicates a driver firmware error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 147 indicates a driver firmware error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 147 indicates a driver firmware error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 148 indicates a driver firmware error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 148 indicates a NVLINK communication error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 148 indicates an NVLINK control error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 148 indicates an NVLINK control error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 148 indicates a NVLINK communication error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 148 indicates an NVLINK control error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 0099 indicates a driver software error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 149 indicates a driver software error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 0099 indicates a software error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 149 indicates a communication error on the GPU. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 0099 indicates a driver software error. Immediate action is to ignore, but it's recommended to contact support for further assistance."}
+{"output": "Xid 149 indicates a driver error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 150 indicates a NVLINK: MSE error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 150 indicates a NVLINK MSE error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 150 indicates a NVLINK MSE error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 150 indicates a NVLINK MSE error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 150 indicates a NVLINK: MSE error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 150 indicates a NVLINK MSE error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 151 indicates a ROBUST_CHANNEL_KEY_ROTATION_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 151 indicates a ROBUST_CHANNEL_KEY_ROTATION_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 151 indicates a ROBUST_CHANNEL_KEY_ROTATION_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 151 indicates a ROBUST_CHANNEL_KEY_ROTATION_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 151 indicates a ROBUST_CHANNEL_KEY_ROTATION_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 151 indicates a ROBUST_CHANNEL_KEY_ROTATION_ERROR. Immediate action is to RESTART_APP, but it's recommended to INVESTIGATE_APP for further details."}
+{"output": "Xid 154 indicates a GPU recovery action has been initiated. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 154 indicates a GPU driver error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 154 indicates a GPU recovery action has been initiated. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 154 indicates a GPU driver error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 154 indicates a GPU driver error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 154 indicates a GPU recovery action has been initiated. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 155 indicates a link down event. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 155 indicates a link down event on the GPU. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 155 indicates an intentional link down event. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 155 indicates a user action. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 155 indicates a link down event on the GPU. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 155 indicates a link down event on the GPU. Immediate action is to ignore, but it's recommended to investigate software defined conditions."}
+{"output": "Xid 156 indicates a resource retirement event on the GPU. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "Xid 156 indicates a resource retirement event on the GPU. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 156 indicates a driver error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 156 indicates a resource retirement event on the GPU. Immediate action is to ignore, but it's recommended to check your connections."}
+{"output": "Xid 156 indicates a resource retirement event on the GPU. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 157 indicates a resource retirement failure. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 157 indicates a resource retirement failure. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 157 indicates a resource retirement failure. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 157 indicates a resource retirement failure. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 157 indicates a resource retirement failure on the GPU. Immediate action is to RESET_GPU, but it's recommended to CONTACT_SUPPORT for further assistance."}
+{"output": "Xid 157 indicates a resource retirement failure. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 158 indicates a GPU fatal timeout. Immediate action is to RESET_GPU, but it's recommended to INVESTIGATE_APP."}
+{"output": "Xid 158 indicates a GPU_FATAL_TIMEOUT. Immediate action is to RESET_GPU, but it's recommended to INVESTIGATE_APP."}
+{"output": "Xid 158 indicates a fatal timeout on the GPU. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 158 indicates a GPU_FATAL_TIMEOUT. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 158 indicates a GPU_FATAL_TIMEOUT. Immediate action is to RESET_GPU, but it's recommended to INVESTIGATE_APP."}
+{"output": "Xid 158 indicates a fatal timeout on the GPU. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 159 indicates a ROBUST_CHANNEL_CHI_NON_DATA_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 159 indicates a ROBUST_CHANNEL_CHI_NON_DATA_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 159 indicates a ROBUST_CHANNEL_CHI_NON_DATA_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 159 indicates a ROBUST_CHANNEL_CHI_NON_DATA_ERROR. Immediate action is to ignore, but it's recommended to check UVM integrity."}
+{"output": "Xid 159 indicates a ROBUST_CHANNEL_CHI_NON_DATA_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 159 indicates a ROBUST_CHANNEL_CHI_NON_DATA_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 160 indicates a non-recoverable error on the GPU. Immediate action is to RESTART_APP, but it's recommended to INVESTIGATE_APP for deeper insights."}
+{"output": "Xid 160 indicates a critical error on the GPU. Immediate action is to RESTART_APP, but it's recommended to INVESTIGATE_APP for deeper insights."}
+{"output": "Xid 160 indicates a channel retirement event on the GPU. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 160 indicates a channel retirement event. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 160 indicates a channel retirement event on the GPU. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 160 indicates a channel retirement event. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "XID 161 indicates a channel retirement failure. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "XID 161 indicates a channel retirement failure. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "XID 161 indicates a Channel Retirement Failure. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "XID 161 indicates a channel retirement failure. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "XID 161 indicates a channel retirement failure. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "XID 161 indicates a channel retirement failure. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 162 indicates a driver firmware issue. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 162 indicates a driver firmware issue. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 162 indicates a driver firmware issue. Immediate action is to ignore, but it's recommended to check your application or driver."}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "Xid 162 indicates a driver firmware issue. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "Xid 163 indicates a user application fault. Immediate action is to ignore, but it's recommended to check your application or consider restarting."}
+{"output": "Xid 163 indicates that the Power Smoothing HW Circuitry has been disabled. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 163 indicates a user application has requested a feature that is not supported by the driver. Immediate action is to ignore, but it's recommended to contact support for further assistance."}
+{"output": "Xid 163 indicates that the GPU's power smoothing hardware circuitry has been disabled. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 163 indicates a user application fault. Immediate action is to ignore, but it's recommended to check your application or kernel."}
+{"output": "Xid 163 indicates a performance drop due to thermal issues. Immediate action is to ignore, but it's recommended to check your cooling system."}
+{"output": "Xid 164 indicates a power smoothing issue. Immediate action is to ignore, but it's recommended to contact support for further assistance."}
+{"output": "Xid 164 indicates a power smoothing issue. Immediate action is to ignore, but it's recommended to check your application or driver."}
+{"output": "RESTART_APP; CHECK_POWER_SWINGS"}
+{"output": "Xid 164 indicates a power smoothing issue. Immediate action is to ignore, but it's recommended to check your application or A100 driver."}
+{"output": "RESTART_APP; CHECK_APP/CUDA"}
+{"output": "Xid 164 indicates a power smoothing issue. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 165 indicates a power smoothing issue. Immediate action is to ignore, but it's recommended to check your datacenter's power infrastructure."}
+{"output": "Xid 165 indicates a power smoothing issue. Immediate action is to ignore, but it's recommended to contact support for further assistance."}
+{"output": "Xid 165 indicates a power smoothing event. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 165 indicates a power smoothing issue. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 165 indicates a power supply issue. Immediate action is to ignore, but it's recommended to check your power supply."}
+{"output": "Xid 165 indicates a power smoothing issue. Immediate action is to ignore, but it's recommended to check your power supply."}
+{"output": "Xid 166 indicates a CC mode initialization error. Immediate action is to ignore, but it's recommended to check your CC configuration settings."}
+{"output": "Xid 166 indicates a misconfiguration in the CC settings. Immediate action is to ignore, but it's recommended to check the documentation for further troubleshooting."}
+{"output": "Xid 166 indicates a secure crypto error on the GPU. Immediate action is to ignore, but it's recommended to check your application or driver settings."}
+{"output": "Xid 166 indicates an encrypted CC traffic error. Immediate action is to ignore, but it's recommended to review your CC configuration."}
+{"output": "Xid 166 indicates an NVLINK_SECURE_CRYPTO_ERR. Immediate action is to ignore, but it's recommended to check your settings for CC traffic."}
+{"output": "Xid 166 indicates a CC configuration error. Immediate action is to ignore, but it's recommended to check your CC configuration and contact support if the issue continues."}
+{"output": "Xid 167 indicates a PCIE_FATAL_TIMEOUT. Immediate action is to RESTART_APP, but it's recommended to INVESTIGATE_APP for deeper insights."}
+{"output": "Xid 167 indicates a driver firmware error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 167 indicates a driver firmware error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 167 indicates a driver firmware error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 167 indicates a driver firmware error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 167 indicates a driver firmware error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 168 indicates a memory error. Immediate action is to ignore, but it's recommended to enable ECC for better diagnostics."}
+{"output": "Xid 168 indicates a memory error. Immediate action is to ignore, but it's recommended to check your application or CUDA."}
+{"output": "Xid 168 indicates a user application fault. Immediate action is to ignore, but it's recommended to contact support for further assistance."}
+{"output": "Xid 168 indicates a memory capacity reduction. Immediate action is to ignore, but it's recommended to enable ECC for further investigation."}
+{"output": "Xid 168 indicates a memory capacity reduction. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 168 indicates a reduced GPU memory capacity. Immediate action is to ignore, but it's recommended to check your application and consider using the --gpu-memory-trim flag."}
+{"output": "Xid 169 indicates a software induced reset. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 169 indicates a software induced reset. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 169 indicates a software fault. Immediate action is to ignore, but it's recommended to investigate using cuda-gdb."}
+{"output": "Xid 169 indicates a software induced H100 GPU reset. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 169 indicates a critical error on the GPU. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 169 indicates a software induced H100 GPU reset. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 170 indicates an interrupt seen in CC mode. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 170 indicates an interrupt seen in CC mode. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 170 indicates a memory access error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 170 indicates an interrupt seen in CC mode. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 170 indicates an interrupt seen in CC mode. The device has been reset successfully, and normal operations have resumed. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 170 indicates an interrupt seen in CC mode. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 171 indicates an uncorrectable DRAM error. Immediate action is to ignore, but it's recommended to contact support for further assistance."}
+{"output": "Xid 171 indicates an uncorrectable DRAM error on the H100 GPU. Immediate action is to RESTART_APP, but it's recommended to INVESTIGATE_APP for deeper analysis."}
+{"output": "Xid 171 indicates an UNCORRECTABLE_DRAM_ERROR on the B100 GPU. Immediate action is to RESTART_APP, but it's recommended to INVESTIGATE_APP/CUDA."}
+{"output": "Xid 171 indicates an uncorrectable DRAM error. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 171 indicates an UNCORRECTABLE_DRAM_ERROR on the H100 GPU. Immediate action is to RESTART_APP, but it's recommended to INVESTIGATE_APP/CUDA."}
+{"output": "Xid 171 indicates an uncorrectable DRAM error on the A100 GPU. Immediate action is to ignore, but it's recommended to check your driver version."}
+{"output": "Xid 172 indicates an uncorrectable SRAM error. Immediate action is to RESTART_APP, but it's recommended to INVESTIGATE_APP."}
+{"output": "Xid 172 indicates an UNCORRECTABLE_SRAM_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 172 indicates an UNCORRECTABLE_SRAM_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 172 indicates an UNCORRECTABLE_SRAM_ERROR. Immediate action is to RESTART_APP, but it's recommended to INVESTIGATE_APP."}
+{"output": "Xid 172 indicates an UNCORRECTABLE_SRAM_ERROR. Immediate action is to ignore, but it's recommended to investigate further."}
+{"output": "Xid 172 indicates an UNCORRECTABLE_SRAM_ERROR. Immediate action required: RESTART_APP. Investigatory action: CHECK_APP/CUDA."}
