@@ -711,7 +711,7 @@ def build_app() -> gr.Blocks:
                         payload_json = gr.JSON(label="Structured triage payload")
                         command_preview = gr.Code(
                             label="Equivalent CLI command",
-                            language="bash",
+                            language=None,
                             value="python demo/cli.py --summary-mode auto --json '<log snippet>'",
                         )
 
@@ -762,8 +762,8 @@ def build_app() -> gr.Blocks:
                         cli_output_format = gr.Radio(choices=["json", "plain"], value="json", label="CLI output format")
                         cli_run_btn = gr.Button("Run CLI", variant="primary")
                     with gr.Column(scale=6):
-                        cli_command = gr.Code(label="Pasteable command", language="bash")
-                        cli_output = gr.Code(label="Captured CLI output", language="shell")
+                        cli_command = gr.Code(label="Pasteable command", language=None)
+                        cli_output = gr.Code(label="Captured CLI output", language=None)
 
                 cli_example_picker.change(load_example, inputs=cli_example_picker, outputs=cli_log_input)
                 cli_run_btn.click(
