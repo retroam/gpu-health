@@ -1,0 +1,8 @@
+{
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "renderer_name": "qwen3",
+  "checkpoint_path": "tinker://dd1abd5e-14af-5db3-8e25-fb99ba240855:train:0/sampler_weights/gpu-health-v1",
+  "save_name": "gpu-health-v1",
+  "max_tokens": 300,
+  "temperature": 0.0
+}

@@ -1,3 +1,14 @@
+---
+title: GPU Health Diagnostics
+emoji: 🔥
+colorFrom: red
+colorTo: blue
+sdk: gradio
+sdk_version: "4.44.0"
+app_file: app.py
+pinned: false
+---
+
 # GPU Health Diagnostics
 
 MVP implementation of the spec in `../gpu-health-spec.md`.

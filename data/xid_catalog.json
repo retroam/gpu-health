@@ -1,0 +1,1607 @@
+[
+  {
+    "xid_code": 8,
+    "mnemonic": "ROBUST_CHANNEL_FIFO_ERROR_IDLE_TIMEOUT",
+    "description": "GPU stopped processing",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 11,
+    "mnemonic": "ROBUST_CHANNEL_GR_ERROR_MISSING_HW",
+    "description": "Invalid or corrupted push buffer stream",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "CHECK_APP/CUDA",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 13,
+    "mnemonic": "ROBUST_CHANNEL_GR_EXCEPTION / ROBUST_CHANNEL_GR_ERROR_SW_NOTIFY",
+    "description": "Graphics Engine Exception",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "WORKFLOW_XID_13",
+    "severity": "",
+    "trigger_conditions": "This event is logged for general user application faults. Typically this is an out-of-bounds error where the user has walked past the end of an array, but could also be an illegal instruction, illegal register, or other case. In rare cases, it\u2019s possible for a hardware failure or system software bugs to materialize as XID 13. When this event is logged, NVIDIA recommends the following: 1. Run the application in cuda-gdb or the Compute Sanitizer memcheck tool , or 2. Run the application with CUDA_DEVICE_WAITS_ON_EXCEPTION=1 and then attach later with cuda-gdb, or 3. File a bug if the previous two come back inconclusive to eliminate potential NVIDIA driver or hardware bug. NOTE: The Compute Sanitizer memcheck tool instruments the running application and reports which line of code performed the illegal read."
+  },
+  {
+    "xid_code": 25,
+    "mnemonic": "ROBUST_CHANNEL_GR_ILLEGAL_NOTIFY",
+    "description": "Invalid or illegal push buffer stream",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "CHECK_APP/CUDA",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 31,
+    "mnemonic": "ROBUST_CHANNEL_FIFO_ERROR_MMU_ERR_FLT",
+    "description": "GPU memory page fault",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "WORKFLOW_XID_31",
+    "severity": "",
+    "trigger_conditions": "This event is logged when a fault is reported by the MMU, such as when an illegal address access is made by an applicable unit on the chip. Typically these are application-level bugs, but can also be driver bugs or hardware bugs. When this event is logged, NVIDIA recommends the following: 1. Run the application in cuda-gdb or the Compute Sanitizer memcheck tool, or 2. Run the application with CUDA_DEVICE_WAITS_ON_EXCEPTION=1 and then attach later with cuda-gdb, or 3. File a bug if the previous two come back inconclusive to eliminate potential NVIDIA driver or hardware bug. NOTE: The Compute Sanitizer memcheck tool instruments the running application and reports which line of code performed the illegal read."
+  },
+  {
+    "xid_code": 32,
+    "mnemonic": "ROBUST_CHANNEL_PBDMA_ERROR",
+    "description": "Invalid or corrupted push buffer stream",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "CHECK_APP/CUDA",
+    "severity": "",
+    "trigger_conditions": "This event is logged when a fault is reported by the DMA controller which manages the communication stream between the NVIDIA driver and the GPU over the PCI-E bus. These failures primarily involve quality issues on PCI, and are generally not caused by user application actions."
+  },
+  {
+    "xid_code": 37,
+    "mnemonic": "ROBUST_CHANNEL_FECS_ERR_UNIMP_FIRMWARE_METHOD",
+    "description": "Driver firmware error",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "IGNORE",
+    "investigatory_action": "CHECK_APP/CUDA",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 38,
+    "mnemonic": "ROBUST_CHANNEL_FECS_ERR_WATCHDOG_TIMEOUT",
+    "description": "Driver firmware error",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "IGNORE",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 39,
+    "mnemonic": "ROBUST_CHANNEL_CE0_ERROR",
+    "description": "Copy Engine Exception",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 40,
+    "mnemonic": "ROBUST_CHANNEL_CE1_ERROR",
+    "description": "Copy Engine Exception",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 41,
+    "mnemonic": "ROBUST_CHANNEL_CE2_ERROR",
+    "description": "Copy Engine Exception",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 43,
+    "mnemonic": "ROBUST_CHANNEL_RESETCHANNEL_VERIF_ERROR",
+    "description": "GPU stopped processing",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "IGNORE",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": "This event is logged when a user application hits a software induced fault and must terminate. The GPU remains in a healthy state. In most cases, this is not indicative of a driver bug but rather a user application error."
+  },
+  {
+    "xid_code": 44,
+    "mnemonic": "ROBUST_CHANNEL_GR_FAULT_DURING_CTXSW",
+    "description": "Graphics Engine fault during context switch",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "IGNORE",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 45,
+    "mnemonic": "ROBUST_CHANNEL_PREEMPTIVE_REMOVAL",
+    "description": "Preemptive cleanup, due to previous errors \u2013 Most likely to see when running multiple cuda applications and hitting a DBE",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "WORKFLOW_XID_45",
+    "investigatory_action": "Solo: RESTART_FM Not Solo: IGNORE (follow other Xid)",
+    "severity": "",
+    "trigger_conditions": "This event is logged when the user application aborts and the kernel driver tears down the GPU application running on the GPU. Control-C, GPU resets, sigkill are all examples where the application is aborted and this event is created. In many cases, this is not indicative of a bug but rather a user or system action."
+  },
+  {
+    "xid_code": 46,
+    "mnemonic": "ROBUST_CHANNEL_GPU_TIMEOUT_ERROR",
+    "description": "GPU stopped processing",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESET_GPU",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 48,
+    "mnemonic": "ROBUST_CHANNEL_GPU_ECC_DBE",
+    "description": "Double Bit ECC Error",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "WORKFLOW_XID_48",
+    "investigatory_action": "WORKFLOW_XID_48",
+    "severity": "",
+    "trigger_conditions": "This event is logged when the GPU detects that an uncorrectable error occurs on the GPU. This is also reported back to the user application. A GPU reset or node reboot is needed to clear this error. The tool nvidia-smi can provide a summary of ECC errors. If the ECC error is reported for SRAM (excludes \u201cframebuffer\u201d), check for SRAM DBE thresholds and follow RMA flow if exceeded - (nvidia-smi <sram_threshold_exceeded> or NSM Msg Type 0x3, Cmd Code 0x7D, bit 0). If flag is set, run field diag."
+  },
+  {
+    "xid_code": 54,
+    "mnemonic": "SILENT_RUNNING_PWR_REDUCED_CLOCKING",
+    "description": "Auxiliary power is not connected to the GPU board",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": false
+    },
+    "immediate_action": "CHECK_MECHANICALS",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 60,
+    "mnemonic": "ROBUST_CHANNEL_SEC2_ERROR",
+    "description": "Video processor exception",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "INVESTIGATE_SW",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 62,
+    "mnemonic": "PMU_HALT_ERROR",
+    "description": "Internal micro-controller halt (newer drivers)",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESET_GPU",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 63,
+    "mnemonic": "INFOROM_DRAM_RETIREMENT_EVENT",
+    "description": "GPU memory remapping event",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "IGNORE",
+    "investigatory_action": "IGNORE",
+    "severity": "",
+    "trigger_conditions": "These events are logged when the GPU handles ECC memory errors on the GPU. On GPUs that support row remapping, starting with NVIDIA\u00ae Ampere archtecture GPUs, these events provide details on row remapper activity. For more information row remapper Xids, refer to https://docs.nvidia.com/deploy/a100-gpu-mem-error-mgmt/index.html#row-remapping . On earlier GPUs that support dynamic page retirement, these events provide details on dynamic page retirement activity. For more information on dynamic page retirement Xids, refer to https://docs.nvidia.com/deploy/dynamic-page-retirement/index.html ."
+  },
+  {
+    "xid_code": 64,
+    "mnemonic": "INFOROM_DRAM_RETIREMENT_FAILURE",
+    "description": "GPU memory remapping failure",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESET_GPU",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": "These events are logged when the GPU handles ECC memory errors on the GPU. On GPUs that support row remapping, starting with NVIDIA\u00ae Ampere archtecture GPUs, these events provide details on row remapper activity. For more information row remapper Xids, refer to https://docs.nvidia.com/deploy/a100-gpu-mem-error-mgmt/index.html#row-remapping . On earlier GPUs that support dynamic page retirement, these events provide details on dynamic page retirement activity. For more information on dynamic page retirement Xids, refer to https://docs.nvidia.com/deploy/dynamic-page-retirement/index.html ."
+  },
+  {
+    "xid_code": 66,
+    "mnemonic": "ROBUST_CHANNEL_FECS_ERR_REG_ACCESS_VIOLATION",
+    "description": "Illegal access by driver",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "IGNORE",
+    "investigatory_action": "INVESTIGATE_SW",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 67,
+    "mnemonic": "ROBUST_CHANNEL_FECS_ERR_VERIF_VIOLATION",
+    "description": "Illegal access by driver",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "IGNORE",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 68,
+    "mnemonic": "ROBUST_CHANNEL_NVDEC0_ERROR",
+    "description": "NVDEC0 Exception",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 69,
+    "mnemonic": "ROBUST_CHANNEL_GR_CLASS_ERROR",
+    "description": "Graphics Engine class error",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "CHECK_APP/CUDA",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 70,
+    "mnemonic": "ROBUST_CHANNEL_CE3_ERROR",
+    "description": "CE3: Unknown Error",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 71,
+    "mnemonic": "ROBUST_CHANNEL_CE4_ERROR",
+    "description": "CE4: Unknown Error",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 72,
+    "mnemonic": "ROBUST_CHANNEL_CE5_ERROR",
+    "description": "CE5: Unknown Error",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 74,
+    "mnemonic": "NVLINK_ERROR",
+    "description": "NVLINK Error",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": false,
+      "APPLIES TO GB200": false
+    },
+    "immediate_action": "WORKFLOW_NVLINK_ERR",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": "This event is logged when the GPU detects that a problem with a connection from the GPU to another GPU or NVSwitch over NVLink. A GPU reset or node reboot is needed to clear this error. This event may indicate a hardware failure with the link itself, or may indicate a problem with the device at the remote end of the link. For example, if a GPU fails, another GPU connected to it over NVLink may report an Xid 74 simply because the link went down as a result. The nvidia-smi nvlink command can provide additional details on NVLink errors, and connection information on the links. If this error is seen repeatedly and GPU reset or node reboot fails to clear the condition, contact your hardware vendor for support."
+  },
+  {
+    "xid_code": 75,
+    "mnemonic": "ROBUST_CHANNEL_CE6_ERROR",
+    "description": "CE6: Unknown Error",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 76,
+    "mnemonic": "ROBUST_CHANNEL_CE7_ERROR",
+    "description": "CE7: Unknown Error",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 77,
+    "mnemonic": "ROBUST_CHANNEL_CE8_ERROR",
+    "description": "CE8: Unknown Error",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 78,
+    "mnemonic": "VGPU_START_ERROR",
+    "description": "vGPU Start Error",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "UPDATE_SWFW",
+    "investigatory_action": "UPDATE_SWFW",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 79,
+    "mnemonic": "ROBUST_CHANNEL_GPU_HAS_FALLEN_OFF_THE_BUS",
+    "description": "GPU has fallen off the bus",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_BM",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": "This event is logged when the GPU driver attempts to access the GPU over its PCI Express connection and finds that the GPU is not accessible. This event is often caused by hardware failures on the PCI Express link causing the GPU to be inaccessible due to the link being brought down. Reviewing system event logs and kernel PCI event logs may provide additional indications of the source of the link failures. This event may also be cause by failing GPU hardware or other driver issues."
+  },
+  {
+    "xid_code": 80,
+    "mnemonic": "PBDMA_PUSHBUFFER_CRC_MISMATCH",
+    "description": "Corrupted data sent to GPU",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": false,
+      "APPLIES TO GB200": false
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "CHECK_APP/CUDA",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 82,
+    "mnemonic": "ROBUST_CHANNEL_NVJPG0_ERROR",
+    "description": "NVJPG0 Error",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 83,
+    "mnemonic": "ROBUST_CHANNEL_NVDEC1_ERROR",
+    "description": "NVDEC1 Error",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 84,
+    "mnemonic": "ROBUST_CHANNEL_NVDEC2_ERROR",
+    "description": "NVDEC2 Error",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 85,
+    "mnemonic": "ROBUST_CHANNEL_CE9_ERROR",
+    "description": "CE9: Unknown Error",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 86,
+    "mnemonic": "ROBUST_CHANNEL_OFA0_ERROR",
+    "description": "OFA Exception",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 88,
+    "mnemonic": "ROBUST_CHANNEL_NVDEC3_ERROR",
+    "description": "NVDEC3 Error",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 89,
+    "mnemonic": "ROBUST_CHANNEL_NVDEC4_ERROR",
+    "description": "NVDEC4 Error",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 92,
+    "mnemonic": "EXCESSIVE_SBE_INTERRUPTS",
+    "description": "High single-bit ECC error rate",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "IGNORE",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 93,
+    "mnemonic": "INFOROM_ERASE_LIMIT_EXCEEDED",
+    "description": "Non-fatal violation of provisioned InfoROM wear limit",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": false,
+      "APPLIES TO B100": false,
+      "APPLIES TO GB200": false
+    },
+    "immediate_action": "IGNORE",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": "This event is logged when the GPU driver fails to update the InfoROM due to violation of the provisioned InfoROM wear limit that was set for the GPU using NVFlash using nvflash \u2013=elsessionstart. In most cases this is not indicative of a driver or flash failure, but rather the intentional use of the InfoROM wear protection feature as set by NVFlash. Recovery steps: The GPU can be recovered from Xid 93 by clearing InfoROM erase limit using ./nvflash \u2013-elsessionclear. If clearing the limit using nvflash doesn\u2019t help, report the issue to NVIDIA."
+  },
+  {
+    "xid_code": 94,
+    "mnemonic": "ROBUST_CHANNEL_CONTAINED_ERROR",
+    "description": "Contained memory error",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "IGNORE (sympathetic)",
+    "severity": "",
+    "trigger_conditions": "These events (94/95) are logged when GPU drivers handle errors in GPUs that support error containment, starting with NVIDIA A100 GPUs. For Xid 94, these errors are contained to one application, and the application that encountered this error must be restarted. All other applications running at the time of the Xid are unaffected. It is recommended to reset the GPU when convenient. Applications can continue to be run until the reset can be performed. One possible cause of containment errors is the handling of ECC memory errors. Review the NVIDIA GPU Memory Error Management manual: https://docs.nvidia.com/deploy/a100-gpu-mem-error-mgmt/index.html#row-remapping for coverage of ECC-triggered containment errors. Xid 45 will be seen in relation to this error."
+  },
+  {
+    "xid_code": 95,
+    "mnemonic": "ROBUST_CHANNEL_UNCONTAINED_ERROR",
+    "description": "Uncontained memory error",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESET_GPU",
+    "investigatory_action": "IGNORE (sympathetic)",
+    "severity": "",
+    "trigger_conditions": "These events (94/95) are logged when GPU drivers handle errors in GPUs that support error containment, starting with NVIDIA\u00ae A100 GPUs. For Xid 95, these errors affect multiple applications, and the affected GPU must be reset before applications can restart. Refer https://docs.nvidia.com/deploy/gpu-debug-guidelines/index.html for GPU Reset capabilities & limitations One possible cause of containment errors is the handling of ECC memory errors. Review the NVIDIA GPU Memory Error Management manual: https://docs.nvidia.com/deploy/a100-gpu-mem-error-mgmt/index.html#row-remapping for coverage of ECC-triggered containment errors. Xid 45 will be seen in relation to this error."
+  },
+  {
+    "xid_code": 96,
+    "mnemonic": "ROBUST_CHANNEL_NVDEC5_ERROR",
+    "description": "NVDEC5 Error",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 97,
+    "mnemonic": "ROBUST_CHANNEL_NVDEC6_ERROR",
+    "description": "NVDEC6 Error",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 98,
+    "mnemonic": "ROBUST_CHANNEL_NVDEC7_ERROR",
+    "description": "NVDEC7 Error",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 99,
+    "mnemonic": "ROBUST_CHANNEL_NVJPG1_ERROR",
+    "description": "NVJPG1 Error",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 100,
+    "mnemonic": "ROBUST_CHANNEL_NVJPG2_ERROR",
+    "description": "NVJPG2 Error",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 101,
+    "mnemonic": "ROBUST_CHANNEL_NVJPG3_ERROR",
+    "description": "NVJPG3 Error",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 102,
+    "mnemonic": "ROBUST_CHANNEL_NVJPG4_ERROR",
+    "description": "NVJPG4 Error",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 103,
+    "mnemonic": "ROBUST_CHANNEL_NVJPG5_ERROR",
+    "description": "NVJPG5 Error",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 104,
+    "mnemonic": "ROBUST_CHANNEL_NVJPG6_ERROR",
+    "description": "NVJPG6 Error",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 105,
+    "mnemonic": "ROBUST_CHANNEL_NVJPG7_ERROR",
+    "description": "NVJPG7 Error",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 106,
+    "mnemonic": "SMBPBI_TEST_MESSAGE",
+    "description": "SMBPBI Test Message",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "IGNORE",
+    "investigatory_action": "IGNORE",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 107,
+    "mnemonic": "SMBPBI_TEST_MESSAGE_SILENT",
+    "description": "SMBPBI Test Message Silent",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "IGNORE",
+    "investigatory_action": "IGNORE",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 109,
+    "mnemonic": "ROBUST_CHANNEL_CTXSW_TIMEOUT_ERROR",
+    "description": "Context Switch Timeout Error",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESET_GPU",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 110,
+    "mnemonic": "SEC_FAULT_ERROR",
+    "description": "Security Fault Error",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESET_GPU",
+    "investigatory_action": "INVESTIGATE_SW",
+    "severity": "",
+    "trigger_conditions": "This event should be uncommon unless there is a hardware failure. To recover, revert any recent system hardware modifications and cold reset the system. If this fails to correct the issue, contact your hardware vendor for assistance."
+  },
+  {
+    "xid_code": 119,
+    "mnemonic": "GSP_RPC_TIMEOUT",
+    "description": "GSP RPC Timeout",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESET_GPU",
+    "investigatory_action": "INVESTIGATE_SW",
+    "severity": "",
+    "trigger_conditions": "These events (119/120) may be logged when an error occurs in code running on the GSP core of the GPU and/or a timeout occurs while waiting for the GSP core of the GPU to respond to an RPC message. A GPU reset or node power cycle may be needed if the error persists. If this problem reoccurs after a power cycle, follow the NVIDIA GPU Debug Guidelines document for additional debugging steps."
+  },
+  {
+    "xid_code": 120,
+    "mnemonic": "GSP_ERROR",
+    "description": "GSP Error",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESET_GPU",
+    "investigatory_action": "INVESTIGATE_SW",
+    "severity": "",
+    "trigger_conditions": "These events (119/120) may be logged when an error occurs in code running on the GSP core of the GPU and/or a timeout occurs while waiting for the GSP core of the GPU to respond to an RPC message. A GPU reset or node power cycle may be needed if the error persists. If this problem reoccurs after a power cycle, follow the NVIDIA GPU Debug Guidelines document for additional debugging steps."
+  },
+  {
+    "xid_code": 121,
+    "mnemonic": "C2C_ERROR",
+    "description": "C2C Error",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": false,
+      "APPLIES TO B100": false,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "IGNORE",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": "This event may occur when the GPU driver has observed corrected errors on the C2C NVLink connection to a Grace CPU. These errors are corrected by the system and have no operational impact. Resetting the GPU at an available service window will allow the GPU to retrain the link. NOTE: repeat errors may be reported; VBIOS 97.00.90.00.00 may provide some relief from that condition"
+  },
+  {
+    "xid_code": 126,
+    "mnemonic": "ROBUST_CHANNEL_CE10_ERROR",
+    "description": "CE10: Unknown Error",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": false,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 127,
+    "mnemonic": "ROBUST_CHANNEL_CE11_ERROR",
+    "description": "CE11: Unknown Error",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": false,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 128,
+    "mnemonic": "ROBUST_CHANNEL_CE12_ERROR",
+    "description": "CE12: Unknown Error",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": false,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 129,
+    "mnemonic": "ROBUST_CHANNEL_CE13_ERROR",
+    "description": "CE13: Unknown Error",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": false,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 130,
+    "mnemonic": "ROBUST_CHANNEL_CE14_ERROR",
+    "description": "CE14: Unknown Error",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": false,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 131,
+    "mnemonic": "ROBUST_CHANNEL_CE15_ERROR",
+    "description": "CE15: Unknown Error",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": false,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 132,
+    "mnemonic": "ROBUST_CHANNEL_CE16_ERROR",
+    "description": "CE16: Unknown Error",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": false,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 133,
+    "mnemonic": "ROBUST_CHANNEL_CE17_ERROR",
+    "description": "CE17: Unknown Error",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": false,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 134,
+    "mnemonic": "ROBUST_CHANNEL_CE18_ERROR",
+    "description": "CE18: Unknown Error",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": false,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 135,
+    "mnemonic": "ROBUST_CHANNEL_CE19_ERROR",
+    "description": "CE19: Unknown Error",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": false,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 136,
+    "mnemonic": "ALI_TRAINING_FAIL",
+    "description": "Link Training Failed",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": false,
+      "APPLIES TO GB200": false
+    },
+    "immediate_action": "RESET_GPU",
+    "investigatory_action": "INVESTIGATE_LINK_SI",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 137,
+    "mnemonic": "NVLINK_PRIV_ERR",
+    "description": "NVLink Privilege Error",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "IGNORE",
+    "investigatory_action": "XID_137_FLOW",
+    "severity": "",
+    "trigger_conditions": "This event is logged when a fault is reported by the remote MMU, such as when an illegal NVLink peer-to-peer access is made by an applicable unit on the chip. Typically these are application-level bugs, but can also be driver bugs or hardware bugs. When this event is logged, NVIDIA recommends the following: #. Run the application in cuda-gdb or the Compute Sanitizer memcheck tool , or #. Run the application with CUDA_DEVICE_WAITS_ON_EXCEPTION=1 and then attach later with cuda-gdb, or #. File a bug if the previous two come back inconclusive to eliminate potential NVIDIA driver or hardware bug."
+  },
+  {
+    "xid_code": 139,
+    "mnemonic": "ROBUST_CHANNEL_OFA1_ERROR",
+    "description": "OFA1 Error",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": false,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_APP",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 140,
+    "mnemonic": "UNRECOVERABLE_ECC_ERROR_ESCAPE",
+    "description": "ECC Unrecovered Error",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESET_GPU",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": "This event may occur when the GPU driver has observed uncorrectable errors in GPU memory, in such a way as to interrupt the GPU driver\u2019s ability to mark the pages for dynamic page offlining or row remapping. Reset the GPU, and if the problem persists, contact your hardware vendor for support."
+  },
+  {
+    "xid_code": 141,
+    "mnemonic": "ROBUST_CHANNEL_FAST_PATH_ERROR",
+    "description": "CUDA Fast Path Error",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "IGNORE",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 142,
+    "mnemonic": "ROBUST_CHANNEL_NVENC3_ERROR",
+    "description": "NVENC3 Error",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": false,
+      "APPLIES TO B100": false,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "CONTACT_SUPPORT",
+    "investigatory_action": "",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 143,
+    "mnemonic": "GPU_INIT_ERROR",
+    "description": "GPU Initialization Error",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESET_GPU",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 144,
+    "mnemonic": "NVLINK_SAW_ERROR",
+    "description": "NVLINK: SAW Error",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": false,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "WORKFLOW_NVLINK5_ERR",
+    "investigatory_action": "WORKFLOW_NVLINK5_ERR",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 145,
+    "mnemonic": "NVLINK_RLW_ERROR",
+    "description": "NVLINK: RLW Error",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": false,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "WORKFLOW_NVLINK5_ERR",
+    "investigatory_action": "WORKFLOW_NVLINK5_ERR",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 146,
+    "mnemonic": "NVLINK_TLW_ERROR",
+    "description": "NVLINK: TLW Error",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": false,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "WORKFLOW_NVLINK5_ERR",
+    "investigatory_action": "WORKFLOW_NVLINK5_ERR",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 147,
+    "mnemonic": "NVLINK_TREX_ERROR",
+    "description": "NVLINK: TREX Error",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": false,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "WORKFLOW_NVLINK5_ERR",
+    "investigatory_action": "WORKFLOW_NVLINK5_ERR",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 148,
+    "mnemonic": "NVLINK_NVLPW_CTRL_ERROR",
+    "description": "NVLINK: NVLPW_CTRL Error",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": false,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "WORKFLOW_NVLINK5_ERR",
+    "investigatory_action": "WORKFLOW_NVLINK5_ERR",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 149,
+    "mnemonic": "NVLINK_NETIR_ERROR",
+    "description": "NVLINK: NETIR Error",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": false,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "WORKFLOW_NVLINK5_ERR",
+    "investigatory_action": "WORKFLOW_NVLINK5_ERR",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 150,
+    "mnemonic": "NVLINK_MSE_ERROR",
+    "description": "NVLINK: MSE Error",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": false,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "WORKFLOW_NVLINK5_ERR",
+    "investigatory_action": "WORKFLOW_NVLINK5_ERR",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 151,
+    "mnemonic": "ROBUST_CHANNEL_KEY_ROTATION_ERROR",
+    "description": "Key rotation Error",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESTART_VM",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 154,
+    "mnemonic": "GPU_RECOVERY_ACTION_CHANGED",
+    "description": "GPU Recovery Action Changed",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "XID_154",
+    "investigatory_action": "N/A Informational only regarding another Xid",
+    "severity": "",
+    "trigger_conditions": "\u201cXid 154 will be seen in conjunction with other Xids and summarizes the recovery action required for other Xids. The string will be similar to \u201c\u201dXid 154 GPU recovery action changed from 0x0 (None) to 0x2 (Node Reboot Required)\u201d\u201d where the expected values of the text are: \u201c\u201dNone\u201d\u201d, \u201c\u201dDrain P2P\u201d\u201d, \u201c\u201dDrain and Reset\u201d\u201d, \u201c\u201dGPU Reset Required\u201d\u201d, \u201c\u201dNode Reboot Required\u201d\u201d. \u201c"
+  },
+  {
+    "xid_code": 155,
+    "mnemonic": "NVLINK_SW_DEFINED_ERROR",
+    "description": "NVLINK: SW Defined Error",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": false,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESET_GPU",
+    "investigatory_action": "INVESTIGATE_SW_USER",
+    "severity": "",
+    "trigger_conditions": "Link down events which are flagged as \u201cintentional\u201d (including transitions to SLEEP) will trigger this Xid"
+  },
+  {
+    "xid_code": 156,
+    "mnemonic": "RESOURCE_RETIREMENT_EVENT",
+    "description": "Resource Retirement Event",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESET_GPU",
+    "investigatory_action": "IGNORE",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 157,
+    "mnemonic": "RESOURCE_RETIREMENT_FAILURE",
+    "description": "Resource Retirement Failure",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "IGNORE",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": "No possible repairs are possible due to lack of resources. You may still run workloads or Apps, but may experience the same Xid again."
+  },
+  {
+    "xid_code": 158,
+    "mnemonic": "GPU_FATAL_TIMEOUT",
+    "description": "GPU Fatal Timeout",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "RESET_GPU",
+    "investigatory_action": "CONTACT_SUPPORT",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 159,
+    "mnemonic": "ROBUST_CHANNEL_CHI_NON_DATA_ERROR",
+    "description": "CHI Non-Data Error",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": false,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "CHECK_UVM",
+    "investigatory_action": "SYMPATHETIC_REPORT_SOLO",
+    "severity": "",
+    "trigger_conditions": "May be seen on any C2C link-connected GPU."
+  },
+  {
+    "xid_code": 160,
+    "mnemonic": "CHANNEL_RETIREMENT_EVENT",
+    "description": "Channel Retirement Event",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": false,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "IGNORE",
+    "investigatory_action": "INVESTIGATE_SW",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 161,
+    "mnemonic": "CHANNEL_RETIREMENT_FAILURE",
+    "description": "Channel Retirement Failure",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": false,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "IGNORE",
+    "investigatory_action": "INVESTIGATE_SW",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 162,
+    "mnemonic": "PSHC_REENGAGED",
+    "description": "Power Smoothing HW Circuitry capability reengaged",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": false,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "",
+    "investigatory_action": "",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 163,
+    "mnemonic": "PSHC_DISENGAGED",
+    "description": "Power Smoothing HW Circuitry capability disengaged",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": false,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "",
+    "investigatory_action": "",
+    "severity": "",
+    "trigger_conditions": "No GPU reset required. If power smoothing functionality is desired, the customer needs to resolve the thermal events. If disabled due to timeout, reload the driver or reset the GPU."
+  },
+  {
+    "xid_code": 164,
+    "mnemonic": "PSHC_LOW_LIFETIME",
+    "description": "Power Smoothing HW Circuitry low lifetime reached",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": false,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "",
+    "investigatory_action": "",
+    "severity": "",
+    "trigger_conditions": "Monitor power swings and expect to replace GPUs if power smoothing is desired. Power smoothing functionality will be disabled soon. Investigate if power swings are acceptable, and if not, take action."
+  },
+  {
+    "xid_code": 165,
+    "mnemonic": "PSHC_ZERO_LIFETIME",
+    "description": "Power Smoothing HW Circuitry lifetime exhausted",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": false,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "",
+    "investigatory_action": "",
+    "severity": "",
+    "trigger_conditions": "Replace GPUs if power swings are not acceptable, and power smoothing is desired. Power smoothing will be disabled by the driver and power swings will occur. Analyze datacenter infrastructure to ensure ability to absorb power swings."
+  },
+  {
+    "xid_code": 166,
+    "mnemonic": "NVLINK_SECURE_CRYPTO_ERR",
+    "description": "CC traffic seen prior to link properly being configured for encrypted traffic",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": false,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "",
+    "investigatory_action": "",
+    "severity": "",
+    "trigger_conditions": "Applicable to CC (confidential computing) mode only."
+  },
+  {
+    "xid_code": 167,
+    "mnemonic": "PCIE_FATAL_TIMEOUT",
+    "description": "PCIE_FATAL_TIMEOUT",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "",
+    "investigatory_action": "",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 168,
+    "mnemonic": "REDUCED_GPU_MEMORY_CAPACITY",
+    "description": "Errors found in WPR (write protected region)",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "",
+    "investigatory_action": "",
+    "severity": "",
+    "trigger_conditions": "Should only be seen when ECC is disabled. Either ECC should be enabled (to enable row-remapping) or boot re-attempted with shifted WPR."
+  },
+  {
+    "xid_code": 169,
+    "mnemonic": "SEC2_HALT_ERROR",
+    "description": "Internal micro-controller halt",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "",
+    "investigatory_action": "",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 170,
+    "mnemonic": "NVLINK_SECURE_OTHER",
+    "description": "Interrupt seen in CC mode",
+    "applies_to": {
+      "APPLIES TO A100": false,
+      "APPLIES TO H100": false,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "",
+    "investigatory_action": "",
+    "severity": "",
+    "trigger_conditions": "Applicable to CC (confidential computing) mode only."
+  },
+  {
+    "xid_code": 171,
+    "mnemonic": "UNCORRECTABLE_DRAM_ERROR",
+    "description": "Additional to Xid 48 providing more details on particulars of fault to differentiate DRAM/SRAM",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "",
+    "investigatory_action": "",
+    "severity": "",
+    "trigger_conditions": ""
+  },
+  {
+    "xid_code": 172,
+    "mnemonic": "UNCORRECTABLE_SRAM_ERROR",
+    "description": "Additional to Xid 48 providing more details on particulars of fault to differentiate DRAM/SRAM",
+    "applies_to": {
+      "APPLIES TO A100": true,
+      "APPLIES TO H100": true,
+      "APPLIES TO B100": true,
+      "APPLIES TO GB200": true
+    },
+    "immediate_action": "",
+    "investigatory_action": "",
+    "severity": "",
+    "trigger_conditions": ""
+  }
+]
